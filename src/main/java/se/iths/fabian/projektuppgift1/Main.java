@@ -7,11 +7,11 @@ public class Main {
         takeArray(helloWorld);
 
         //Andra metoden
-        int[] numbers = {1, 5, 23, 24, 25};
+        int[] numbers = {1, 5, 23, 24, 25, 93};
         System.out.println(maxInArray(numbers));
 
         //Tredje metoden
-        System.out.println(maxDouble(12.24, 12.25));
+        System.out.println(maxDouble(12.29, 12.25));
 
         //Fjärde metoden
         fullName("Fabian", "Berencreutz");
