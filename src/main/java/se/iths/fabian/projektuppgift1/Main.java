@@ -6,7 +6,7 @@ public class Main {
         Method method = new Method();
 
         //Första metoden
-        String[] helloWorld = {"Hello, World, !"};
+        String[] helloWorld = {"Hello", "World", "!"};
         method.takeArray(helloWorld);
 
         //Andra metoden.
