@@ -2,49 +2,21 @@ package se.iths.fabian.projektuppgift1;
 
 public class Main {
     public static void main(String[] args) {
+
+        Method method = new Method();
+
         //Första metoden
         String[] helloWorld = {"Hello, World, !"};
-        takeArray(helloWorld);
+        method.takeArray(helloWorld);
 
-        //Andra metoden
+        //Andra metoden.
         int[] numbers = {1, 5, 23, 24, 25, 93};
-        System.out.println(maxInArray(numbers));
+        System.out.println(method.maxInArray(numbers));
 
         //Tredje metoden
-        System.out.println(maxDouble(12.29, 12.25));
+        System.out.println(method.maxDouble(12.29, 12.25));
 
         //Fjärde metoden
-        fullName("Fabian", "Berencreutz");
-    }
-
-    public static void takeArray(String[] takeArray) {
-        for (String s : takeArray) {
-            System.out.println(s);
-        }
-    }
-
-    public static int maxInArray(int[] array) {
-        int max = 0;
-        for (int i : array) {
-            if (i > max) {
-                max = i;
-            }
-        }
-
-        return max;
-    }
-
-    public static double maxDouble(double a, double b) {
-        return Math.max(a, b);
-
-//        if (a > b) {
-//            return a;
-//        } else {
-//            return b;
-//        }
-    }
-
-    public static void fullName(String firstName, String lastName) {
-        System.out.println(firstName + " " + lastName);
+        method.fullName("Fabian", "Berencreutz");
     }
 }
